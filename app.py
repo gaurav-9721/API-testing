@@ -7,10 +7,7 @@ api = Api(app)
 task_post_args = reqparse.RequestParser()
 task_post_args.add_argument("numbers", type=str, required = True, action = 'append')
 
-data = {
-    1: {'Name': 'Parmar', 'Sex': 'Male'},
-    2: {'Name': 'ShivShankar', 'Sex': 'Other'}
-}
+
 
 class Boroplus(Resource):
     def get(self):
